@@ -137,12 +137,15 @@ Die\ height\ in\ microns = \frac{671405}{1000} = 671.405\ Microns
 Area\ of\ die\ in\ microns = 660.685 * 671.405 = 443587.212\ Square\ Microns
 ```
 
-Commands to load floorplan def in magic in another terminal
+#### Commands to load floorplan def in magic in another terminal
 
 ```bash
 # Change directory to path containing generated floorplan def
-cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs//results/floorplan/
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/12-10_02-16/results/floorplan/
 
 # Command to load the floorplan def in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
 ```
+![Screenshot from 2024-10-16 02-44-54](https://github.com/user-attachments/assets/5c51deeb-b426-4200-9712-ea4e26ab7844)
+
+**Fig8: Floorplan def in magic tool**

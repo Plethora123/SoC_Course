@@ -83,9 +83,7 @@ Section 2 tasks:-
 4. Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
 5. Load generated placement def in magic tool and explore the placement.
 
-```math
-Area\ of\ die\ in\ microns = Die\ width\ in\ microns * Die\ height\ in\ microns
-```
+
 #### 1. Run 'picorv32a' design floorplan using OpenLANE flow and generate necessary outputs.
 
 ```bash
@@ -133,6 +131,10 @@ Die\ width\ in\ microns = \frac{660685}{1000} = 660.685\ Microns
 ```math
 Die\ height\ in\ microns = \frac{671405}{1000} = 671.405\ Microns
 ```
+```math
+Area\ of\ die\ in\ microns = Die\ width\ in\ microns * Die\ height\ in\ microns
+```
+
 ```math
 Area\ of\ die\ in\ microns = 660.685 * 671.405 = 443587.212\ Square\ Microns
 ```

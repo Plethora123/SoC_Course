@@ -33,9 +33,20 @@ Open-source SoC design involves RTL designs, EDA tools, and PDK data. With initi
 ### ASIC Design Flow
 ASIC design transitions from RTL to GDSII, the format for the final layout. Essential tasks include **Synthesis**, **Floor Planning**, **Placement**, **Clock Tree Synthesis**, **Routing**, and various Sign-off checks like **DRC**, **LVS**, and **STA**.
 
-![image]()
+![why-to-adopt-the-asic-design-flow-1](https://github.com/user-attachments/assets/f4a02ae5-5f6a-407e-9f19-de32ceb0bb71)
+
+**Fig1: ASIC design flow**
+
+![Screenshot 2024-10-16 014714](https://github.com/user-attachments/assets/da373cb0-0799-4410-a6f1-a87adfedf283)
+
+**Fig2: Physical Design flow**
+
 ### OpenLANE Flow
 OpenLANE aids ASIC design, enabling RTL-to-GDSII implementation using synthesis and layout tools, culminating in a manufacturable layout.
+
+![Screenshot 2024-10-06 223314](https://github.com/user-attachments/assets/d48e7d4e-35ca-41cd-8fb6-fd791d44816a)
+
+**Fig3: OpenLANE flow**
 
 ## Implementation Steps
 
@@ -54,7 +65,11 @@ exit
 ```
 ![synthesis_success](https://github.com/user-attachments/assets/5c447652-307c-43cc-803b-75682d630527)
 
+**Fig4: Synthesis Success**
+
 ![stats_of_final_synthesis_of_picorv32A](https://github.com/user-attachments/assets/3be7140b-e30a-4ff3-8776-e01dc517cead)
+
+**Fig5: Final stats after synthesis**
 
 Calculation of Flop Ratio and DFF % from synthesis statistics report file
 

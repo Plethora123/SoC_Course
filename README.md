@@ -55,3 +55,11 @@ exit
 
 ![stats_of_final_synthesis_of_picorv32A](https://github.com/user-attachments/assets/3be7140b-e30a-4ff3-8776-e01dc517cead)
 
+Calculation of Flop Ratio and DFF % from synthesis statistics report file
+
+```math
+Flop\ Ratio = \frac{1613}{14876} = 0.108429685
+```
+```math
+Percentage\ of\ DFF's = 0.108429685 * 100 = 10.84296854\ \%
+```

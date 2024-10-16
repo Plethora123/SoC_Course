@@ -80,8 +80,8 @@ Percentage\ of\ DFF's = 0.1084 * 100 = 10.84\ \%
 Section 2 tasks:- 
 1. Run 'picorv32a' design floorplan using OpenLANE flow and generate necessary outputs.
 2. Calculate the die area in microns from the values in floorplan def.
-4. Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
-5. Load generated placement def in magic tool and explore the placement.
+3. Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
+4. Load generated placement def in magic tool and explore the placement.
 
 
 #### 1. Run 'picorv32a' design floorplan using OpenLANE flow and generate necessary outputs.
@@ -152,7 +152,7 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 **Fig8: Floorplan def in magic tool**
 
-#### 4. Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
+#### 3. Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
 
 Command to run placement
 
@@ -163,7 +163,7 @@ run_placement
 
 **Fig9: Placement successful**
 
-Commands to load placement def in magic in another terminal
+#### 4. Commands to load placement def in magic in another terminal
 
 ```bash
 # Change directory to path containing generated placement def

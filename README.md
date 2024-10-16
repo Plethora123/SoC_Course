@@ -50,3 +50,8 @@ package require openlane 0.9
 prep -design picorv32a
 run_synthesis
 exit
+
+```
+
+![stats_of_final_synthesis_of_picorv32A](https://github.com/user-attachments/assets/3be7140b-e30a-4ff3-8776-e01dc517cead)
+

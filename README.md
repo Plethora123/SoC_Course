@@ -1,14 +1,6 @@
 # SoC_Course
 
-Day 1
-
-Basics of chip:
-
-# System-on-Chip Design and Planning
-
-This repository provides an in-depth exploration of SoC design processes, from the fundamental concepts of chip packaging and internal architecture to implementing RISC-V ISA, RTL synthesis, and physical design flow using open-source tools. 
-
-## Contents
+## Day 1 Contents
 - [Introduction](#introduction)
 - [Concept Overview](#concept-overview)
 - [Implementation Steps](#implementation-steps)
@@ -74,8 +66,9 @@ exit
 Calculation of Flop Ratio and DFF % from synthesis statistics report file
 
 ```math
-Flop\ Ratio = \frac{1613}{14876} = 0.108429685
+Flop\ Ratio = \frac{1613}{14876} = 0.1084
 ```
 ```math
-Percentage\ of\ DFF's = 0.108429685 * 100 = 10.84296854\ \%
+Percentage\ of\ DFF's = 0.1084 * 100 = 10.84\ \%
 ```
+

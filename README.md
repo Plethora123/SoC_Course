@@ -158,4 +158,9 @@ Command to run placement
 # Congestion aware placement by default
 run_placement
 ```
+![Screenshot from 2024-10-16 02-58-33](https://github.com/user-attachments/assets/a5ffb598-45eb-4c98-9af6-50568f7195cc)
+
+**Fig9: Placement successful**
+
+
 

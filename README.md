@@ -105,6 +105,44 @@ run_floorplan
 ```
 ![Screenshot from 2024-10-12 07-49-09](https://github.com/user-attachments/assets/73245535-31ec-4781-9114-45b3c1c6d87a)
 
-**Fig6: FLoorplan success**
+**Fig6: Floorplan success**
+
+#### 2. Calculate the die area in microns from the values in floorplan def.
+
+![image](https://github.com/user-attachments/assets/47276ee4-ea46-4c2e-8683-082e9b3ade3c)
+
+**Fig7: Contents of floorplan**
 
 
+According to floorplan def
+```math
+1000\ Unit\ Distance = 1\ Micron
+```
+```math
+Die\ width\ in\ unit\ distance = 660685 - 0 = 660685
+```
+```math
+Die\ height\ in\ unit\ distance = 671405 - 0 = 671405
+```
+```math
+Distance\ in\ microns = \frac{Value\ in\ Unit\ Distance}{1000}
+```
+```math
+Die\ width\ in\ microns = \frac{660685}{1000} = 660.685\ Microns
+```
+```math
+Die\ height\ in\ microns = \frac{671405}{1000} = 671.405\ Microns
+```
+```math
+Area\ of\ die\ in\ microns = 660.685 * 671.405 = 443587.212\ Square\ Microns
+```
+
+Commands to load floorplan def in magic in another terminal
+
+```bash
+# Change directory to path containing generated floorplan def
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs//results/floorplan/
+
+# Command to load the floorplan def in magic tool
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+```

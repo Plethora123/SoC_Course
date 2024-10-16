@@ -155,7 +155,6 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 Command to run placement
 
 ```tcl
-# Congestion aware placement by default
 run_placement
 ```
 ![Screenshot from 2024-10-16 02-58-33](https://github.com/user-attachments/assets/a5ffb598-45eb-4c98-9af6-50568f7195cc)
@@ -166,11 +165,12 @@ Commands to load placement def in magic in another terminal
 
 ```bash
 # Change directory to path containing generated placement def
-cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06/results/placement/
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/12-10_02-16/results/placement/
 
 # Command to load the placement def in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
 ```
 
+![Screenshot from 2024-10-16 03-03-50](https://github.com/user-attachments/assets/38b51178-d34b-423d-8d79-7056ed09f365)
 
-
+**Fig10: Placement def in magic tool**

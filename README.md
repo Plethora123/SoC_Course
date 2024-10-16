@@ -42,7 +42,6 @@ OpenLANE aids ASIC design, enabling RTL-to-GDSII implementation using synthesis 
 
 ## Implementation Steps
 
-### Section 1: Synthesis with OpenLANE
 Steps to run 'picorv32a' design synthesis:
 ```bash
 # Enter OpenLANE directory
@@ -72,3 +71,35 @@ Flop\ Ratio = \frac{1613}{14876} = 0.1084
 Percentage\ of\ DFF's = 0.1084 * 100 = 10.84\ \%
 ```
 
+## Day 2 contents
+
+- [Implementation Steps of Floorplan](#implementation-steps-of-floorplan)
+
+### Implementation
+
+Section 2 tasks:- 
+1. Run 'picorv32a' design floorplan using OpenLANE flow and generate necessary outputs.
+2. Calculate the die area in microns from the values in floorplan def.
+4. Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
+5. Load generated placement def in magic tool and explore the placement.
+
+```math
+Area\ of\ die\ in\ microns = Die\ width\ in\ microns * Die\ height\ in\ microns
+```
+#### 1. Run 'picorv32a' design floorplan using OpenLANE flow and generate necessary outputs.
+
+```bash
+# Change directory to openlane flow directory
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# alias docker='docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) efabless/openlane:v0.21'
+```
+```tcl
+# Now that we have entered the OpenLANE flow contained docker sub-system we can invoke the OpenLANE flow in the Interactive mode
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+run_synthesis
+# Now we can run floorplan
+run_floorplan
+```

@@ -103,3 +103,8 @@ run_synthesis
 # Now we can run floorplan
 run_floorplan
 ```
+![Screenshot from 2024-10-12 07-49-09](https://github.com/user-attachments/assets/73245535-31ec-4781-9114-45b3c1c6d87a)
+
+**Fig6: FLoorplan success**
+
+

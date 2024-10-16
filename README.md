@@ -149,3 +149,13 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ![Screenshot from 2024-10-16 02-44-54](https://github.com/user-attachments/assets/5c51deeb-b426-4200-9712-ea4e26ab7844)
 
 **Fig8: Floorplan def in magic tool**
+
+#### 4. Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
+
+Command to run placement
+
+```tcl
+# Congestion aware placement by default
+run_placement
+```
+

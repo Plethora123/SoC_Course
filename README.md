@@ -176,3 +176,36 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ![Screenshot from 2024-10-16 03-03-50](https://github.com/user-attachments/assets/38b51178-d34b-423d-8d79-7056ed09f365)
 
 **Fig10: Placement def in magic tool**
+
+## Day 3 contents
+
+- [Inverter simulation on ngspice](#Inverter-simulation-on-ngspice)
+- 
+
+1. **Rise Time:**
+   - The time taken for the output waveform to transition from 20% to 80% of its maximum value.
+   - Using data points:
+     - x0 = 6.16138e-09, y0 = 0.660007
+     - x1 = 6.20366e-09, y1 = 2.64009
+   - Rise time = x1 - x0 = 0.0422 ns
+
+2. **Fall Time:**
+   - The time taken for the output waveform to transition from 80% to 20% of its maximum value.
+   - Using data points:
+     - x0 = 8.04034e-09, y0 = 2.64003
+     - x1 = 8.06818e-09, y1 = 0.659993
+   - Fall time = x1 - x0 = 0.0278 ns
+
+3. **Propagation Delay:**
+   - The time taken for a 50% transition at the output (0 to 1) corresponding to a 50% transition at the input (1 to 0).
+   - Using data points:
+     - x0 = 2.18449e-09, y0 = 1.64994
+     - x1 = 2.15e-09, y1 = 1.65011
+   - Propagation delay = x1 - x0 = 0.034 ns
+
+4. **Cell Fall Delay:**
+   - The time taken for a 50% transition at the output (1 to 0) corresponding to a 50% transition at the input (0 to 1).
+   - Using data points:
+     - x0 = 4.05432e-09, y0 = 1.65
+     - x1 = 4.05001e-09, y1 = 1.65
+   - Cell fall delay = x1 - x0 = 0.0043 ns
